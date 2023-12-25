@@ -24,7 +24,7 @@ function Random() {
   }
 
   return (
-    <div className="h-screen w-screen flex flex-col shrink-0 justify-center items-center">
+    <div className="h-screen w-screen flex flex-col shrink-0  items-center">
       <div className="bg-green-500 rounded-2xl border-black border-2 items-center flex flex-col p-8 gap-y-4 w-1/2 min-h-[50vh]">
         <h1 className="font-bold text-2xl">A Random Gif</h1>
 
@@ -37,6 +37,9 @@ function Random() {
           GENERATE
         </button>
       </div>
+      <h1 className=" font-bold text-3xl mt-40">
+        Scroll Down to Generate Desired GIFs
+      </h1>
     </div>
   );
 }
