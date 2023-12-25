@@ -1,5 +1,6 @@
 import "./App.css";
 import Random from "./components/Random";
+import Tag from "./components/Tag";
 function App() {
   return (
     <div className="w-full h-screen flex flex-col items-center gap-y-10">
@@ -7,6 +8,7 @@ function App() {
         Random Gif
       </h1>
       <Random />
+      <Tag />
     </div>
   );
 }
