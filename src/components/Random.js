@@ -5,19 +5,14 @@ function Random() {
   const [gif, setGIF] = useState("");
   const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 
-  async function fetchData() {
-    const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
-    try {
+  useEffect(() => {
+    const fetchData = async () => {
+      const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
       const apiOutput = await axios.get(url);
       console.log(apiOutput);
-    } catch (error) {
-      console.error("Error fetching data:", error.message);
-    }
-  }
-
-  useEffect(() => {
+    };
     fetchData();
-  }, []);
+  }, [API_KEY]);
 
   const clickHandler = () => {
     setGIF("Amit");
