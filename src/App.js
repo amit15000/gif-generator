@@ -1,6 +1,5 @@
 import "./App.css";
 import Random from "./components/Random";
-
 function App() {
   return (
     <div className="w-full h-screen flex flex-col items-center gap-y-10">
